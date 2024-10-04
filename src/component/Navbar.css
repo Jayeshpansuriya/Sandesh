@@ -1,0 +1,126 @@
+/* .card:hover{
+  box-shadow: 0px 0px 45px rgb(23, 23, 23);
+  border: #ffffff 2px solid;
+} */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+h1 {
+  font-family: "Stylish", serif;
+  /* font-weight: 400; */
+  font-style: normal;
+  font-weight: bolder;
+
+  margin-top: 5px;
+}
+/* @font-face {
+  font-family: myFont;
+  src: url(../assets/pandore.ttf);
+}
+h1{
+  font-family: myFont;
+} */
+
+.container-fluid .nav-container{
+  display: flex;
+  justify-content:space-between;
+  align-items: center;
+}
+.navbar-collapse{
+  flex-grow: 0;
+}
+.badge{
+  z-index: 2;
+}
+
+.card{
+  overflow: hidden;
+  z-index: 2;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset,rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transition: all 0.5s ease;
+  transition: transform 0.5s ease-in-out;
+}
+.card:hover .card-img-top {
+  transform: scale(1.1);
+}
+.card:hover {
+  transition: all 0.2s ease-out;
+  box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset, rgba(0, 0, 0, 0.35) 0px -50px 36px -28px inset,rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  transform: scale(1.01);
+  /* border: 2px solid #ffffff; */
+}
+.custom-navbar {
+    background-color: #747bff;
+    transition: all 0.5s ease;
+  }
+  
+  .custom-navbar:hover {
+    background-color: #5658dd;
+  }
+ 
+  .nav-link {
+    position: relative;
+  }
+  .nav-link::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2.5px;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(255, 64, 0);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.3s;
+    border-radius:100%;
+  }
+  .nav-link:hover::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 2.5px;
+    height: 2px;
+    width: 100%;
+    background-color: rgb(44, 199, 255);
+    transform: scaleX(0);
+    transform-origin: center;
+    transition: transform 0.5s;
+    border-radius:100%;
+    transform: scaleX(0.9);
+    transform-origin: center;
+  }
+  .nav-link:hover {
+    color: rgb(44, 199, 255);
+  }
+  .mode-logo {
+    /* height: 80px; 
+    width: 80px; */
+    transition: transform 0.3s ease;
+  }
+  .mode-logo:hover {
+    filter: drop-shadow(0 0 10px rgba(0,0,0,0.5));
+    cursor: pointer;
+  }
+  .mode-logo:active{
+    transform: scale(0.9)  rotate(45deg);
+
+  }
+  .navbar {
+    height: 55px;
+  }
+  .card-img-top{
+    height: 200px;
+    width: 100%;
+    object-fit: cover;
+    transition: transform 300ms ease-in-out;
+  }
+  .card-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  .card-text{
+    font-size: 1.1rem;
+  }
+ .card-body {
+  z-index: 10;
+}
